@@ -10,9 +10,9 @@ jobs:
         run: |
           pwd
           ls -a 
-          echo @GITHUB_SHA 
-          echo @GITHUB_REPOSITORY 
-          echo @GITHUB_WORKSPACE 
+          echo "GH_REPO: $GH_REPO"
+          echo "GH_REPO_O: $GH_REPO_O"
+          echo "GH_T: $GH_T"
           echo "${{ github.token }}"     
       - name: checkout
         uses: actions/checkout@v1
@@ -20,9 +20,9 @@ jobs:
         run: |
           pwd
           ls -a
-          echo @GITHUB_SHA 
-          echo @GITHUB_REPOSITORY 
-          echo @GITHUB_WORKSPACE 
+          echo "GH_REPO: $GH_REPO"
+          echo "GH_REPO_O: $GH_REPO_O"
+          echo "GH_T: $GH_T"
           echo "${{ github.token }}"
       - name: Simple JS action
         id: greet
