@@ -12,17 +12,20 @@ jobs:
         with:
           who-to-greet: John
       - name: Log greeting Time
-        run: echo "${{steps.greet.outputs.time}}"
-      - name: checkout
-        run: |
-          pwd
-          ls -a
-          echo @GITHUB_SHA
-          echo @GITHUB_REPOSITORY
-          echo @GITHUB_WORKSPACE
-          echo "${{ github.token}}"     
+        run: echo "${{steps.greet.outputs.time}}"    
       - name: List files
         run: |
           pwd
-          ls -a  
+          ls -a 
+          echo @GITHUB_SHA
+          echo @GITHUB_REPOSITORY
+          echo @GITHUB_WORKSPACE
+          echo "${{ github.token }}"     
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: List Files After checkout
+        run: |
+          pwd
+          ls -a
+            
        
