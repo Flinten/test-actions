@@ -8,9 +8,9 @@ jobs:
     steps:
       - name: echo string
         run: echo "hallo world!!!"
-      - name: multiline sript
-        run: |
-          node -v
+      - name: run version node
+        run: node -v 
+      - name: run version npm -n
           npm -v
          
 
