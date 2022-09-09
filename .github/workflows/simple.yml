@@ -11,6 +11,6 @@ jobs:
       - name: run version node
         run: node -v 
       - name: run version npm -n
-          npm -v
+        run:  npm -v
          
 
