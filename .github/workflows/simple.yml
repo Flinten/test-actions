@@ -1,0 +1,7 @@
+name: Shell cmd
+
+on: [push]
+
+jobs: 
+  run-shell-command: 
+    runs-on: ubuntu-lastest
