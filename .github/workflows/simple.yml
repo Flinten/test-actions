@@ -1,7 +1,8 @@
 name: Shell cmd
 
 on:
-  push:
+  pull_request:
+    
     
 
 jobs: 
