@@ -13,6 +13,8 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: payload
+        run: echo ${{ github.event.clint_payload.env}}
       - name: List files
         run: |
           pwd
