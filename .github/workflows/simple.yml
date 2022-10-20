@@ -17,7 +17,7 @@ jobs:
         run:  npm -v
       - name: "Python Command"
         run: |
-          import platform
+          import platform--
           print(platform.processor())
         shell: python  
   run-windows-commands:
