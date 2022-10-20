@@ -45,7 +45,8 @@ jobs:
   create_issue:
     runs-on: ubuntu-latest
     permissions:
-      issues: write 
+      issues: write
+      contents: write 
     steps:
       - name: Push random file
         run: |
