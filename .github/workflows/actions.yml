@@ -62,10 +62,10 @@ jobs:
           git branch --set-upstream-to=origin/main
           git pull
           ls -a
-          echo @RANDON >> random.txt
+          echo $RANDON >> random.txt
           ls -a
           git add .
-          git commit -m "random file"
+          git commit -m "random file-2"
           git push
       - name: Create issue using REST API
         run: |
